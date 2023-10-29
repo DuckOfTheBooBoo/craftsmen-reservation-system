@@ -1,12 +1,4 @@
 from rich.prompt import Prompt, Confirm
-from rich.console import Console
-from rich.traceback import install
-
-# Rich traceback
-install()
-
-# Rich.console init
-console = Console()
 
 def main() -> None:
     console.print("""WELCOME TO CRAFTSMEN RESERVATION SYSTEM""")
