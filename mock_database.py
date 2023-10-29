@@ -12,10 +12,10 @@ User database
 """
 DATABASE: List = []
 
-def add_user(username: str, password: str) -> None:
+def add_user(account: Dict[str, str]) -> None:
     DATABASE.append({
-        "username": username,
-        "password": password
+        "username": account["username"],
+        "password": account["password"]
     })
 
 def get_user(username: str) -> Dict[str, str]:
