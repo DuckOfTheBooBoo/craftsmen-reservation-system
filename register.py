@@ -1,5 +1,5 @@
 from mock_database import add_user
-from rich.prompt import Confirm, Prompt
+from rich.prompt import Prompt
 from rich_module import console
 from typing import Dict
 
