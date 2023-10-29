@@ -3,7 +3,8 @@ from rich.prompt import Prompt
 from rich_module import console
 from typing import Dict
 
-def register() -> None:
+def register() -> Dict[str, str]:
+    console.print('[yellow]REGISTER[/]')
     
     username: str = ''
     while not username:
@@ -36,4 +37,4 @@ def register() -> None:
     add_user(account)
     console.print('[green]Successfully created new account[/]')
 
-    return
+    return account
